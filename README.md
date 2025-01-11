@@ -24,12 +24,7 @@ A python program that analyzes productivity and goal data, produces graphs to vi
 6. Run main.py to launch GUI
 
 ## Usage
-1. Validate default_settings.txt contents and storage location
-   * contains updated path values
-   * starting_week contains a date value stored as a string with no quotation marks separated by '-'
-   * contains a naming pattern
-3. Handle data entry and formatting
-
+1. Handle data entry and formatting
    * goal and productivity data is entered with the following schema: Date, Subject, Type, Activity, Start, End
       * Date
          * Type: datetime
@@ -37,13 +32,35 @@ A python program that analyzes productivity and goal data, produces graphs to vi
          * Required: Yes
       * Subject
          * Type: str
-         * Description: The general category that the task belongs to - helpful for organizing data
+         * Description: The general category that the task belongs to - helpful for organizing data, examples: Operating Systems, Data Structures & Algorithms
          * Required: No
       * Type
          * Type: str
-         * Description:
+         * Description: Subcategory of the general category (subject) that the task belongs to, examples: Homework, Project, Quiz
+         * Required: No
+      * Activity
+         * Type: str
+         * Description: The title of the specific task describing what is being worked on or accomplished
+         * Required: No
+      * Start
+         * Type: datetime
+         * Description: The time the task is started, must have format of HH:MM PM/AM, examples: 11:30 PM, 1:17 AM
+         * Required: Yes 
+      * End
+         * Type: datetime
+         * Description: The time the task is ended, must have format of HH:MM PM/AM, examples: 11:30 PM, 1:17 AM
+         * Required: Yes 
       * note: empty or improperly formatted entries in the required data fields will raise a runtime error
    * goal data has at least one entry for each corresponding day that exists in the productivity data selection
+   * neither of the files can be empty or improperly formatted for the program to work
+2. Validate default_settings.txt contents and storage location
+   * contains updated path values
+   * starting_week contains a date value stored as a string with no quotation marks separated by '-'
+   * contains a naming pattern
+   * the text file is stored in the same directory at the same level as the source code
+3. Compile and run main.py
+   * The gui should appear looking like this:
+      * 
 ## Features
  * GUI
    * Select paths for files containing goal data and productivity data
