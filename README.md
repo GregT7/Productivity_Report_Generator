@@ -5,7 +5,7 @@ A python program that analyzes productivity and goal data, produces graphs to vi
 
 ## Installation
 1. Clone repository
-   `git clone https://github.com/GregT7/Productivity_Report_Generator.git`
+   ⋅⋅⋅git clone https://github.com/GregT7/Productivity_Report_Generator.git
 2. Install dependencies
   * pip install -r .\requirements.txt
 3. Update default_settings.txt file
