@@ -92,7 +92,13 @@ A python program that analyzes productivity and goal data, produces graphs to vi
       * As of right now, I am using 'prod_report_spr2025_wX.pdf' as the naming pattern with the 'X' being replaced with the number of weeks passed from the starting_week date
       * Starting week date for calculating the current work week number
       * This is helpful for me because I organize my school content based on the current week of the semester
-      * ![settings_img](https://github.com/user-attachments/assets/19bacc27-dad6-4040-8c83-0b5bc41b89e0)
+      * ```
+        starting_week = 2024-12-30
+        prod_path = /Users/Grego/Desktop/Winter_2024/winter2024_TimeData.xlsx
+        goal_path = /Users/Grego/Desktop/Winter_2024/goal_data.xlsx
+        save_path = /Users/Grego/Desktop
+        naming_pattern = prod_report_spr2025_wX.pdf
+        ```
 
 ## Libraries
  - pandas
