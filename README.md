@@ -60,7 +60,11 @@ A python program that analyzes productivity and goal data, produces graphs to vi
    * the text file is stored in the same directory at the same level as the source code
 3. Compile and run main.py
    * The gui should appear looking like this:
-      * 
+      * ![gui](https://github.com/user-attachments/assets/d95c0474-c5f6-4bd4-a58c-fd63b2743492)
+   * Select data files and save location or leave blank if using default values
+   * Select the data range to filter the data
+   * Generate the report
+4. Note: Data is collected by hand using a data collection form
 ## Features
  * GUI
    * Select paths for files containing goal data and productivity data
