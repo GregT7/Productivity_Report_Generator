@@ -13,8 +13,8 @@ A python program that analyzes productivity and goal data, produces graphs to vi
    pip install -r .\requirements.txt
    ```
 3. Update default_settings.txt file
-  * starting_week - update with date in format '%YYYY-%MM-%DD' for the week number calculation to be based on
-    * used in the pdf report text at top of file saying "Week #1" where the "1" is calculated based on the number of weeks passed from the start_date filtering variable
+   * starting_week - update with date in format '%YYYY-%MM-%DD' for the week number calculation to be based on
+      * used in the pdf report text at top of file saying "Week #1" where the "1" is calculated based on the number of weeks passed from the start_date filtering variable
     * prod_path - update with file path of productivity data
     * goal_path - update with file path of goal data
     * save_path - update with directory path where you want the pdf file to be saved to
