@@ -9,7 +9,9 @@ A python program that analyzes productivity and goal data, produces graphs to vi
    git clone https://github.com/GregT7/Productivity_Report_Generator.git
    ```
 2. Install dependencies
-  * pip install -r .\requirements.txt
+   ```
+   pip install -r .\requirements.txt
+   ```
 3. Update default_settings.txt file
   * starting_week - update with date in format '%YYYY-%MM-%DD' for the week number calculation to be based on
     * used in the pdf report text at top of file saying "Week #1" where the "1" is calculated based on the number of weeks passed from the start_date filtering variable
