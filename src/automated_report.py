@@ -107,9 +107,8 @@ def generate_report(start_date, end_date, week_no, save_loc, prod_path, goal_pat
         r_dict = add_graph(pdf, graph_dict, title_dict, desc_dict)
         temp_paths.append(r_dict['tpath'])
 
-        # 185
         ypos += 8
-        title_dict = {'title': 'Productive Time Heatmap', 'x':16, 'y':ypos, 'size':12}
+        title_dict = {'title': 'Productivitiy/Goal Differential Heatmap', 'x':16, 'y':ypos, 'size':12}
         ypos += height + 3
         graph_dict = {'x': 20, 'y': 175, 'w':190, 'h':height-15,
                       'fig': graphs['performance_graph'][0],
