@@ -22,8 +22,28 @@ A python program that analyzes productivity and goal data, produces graphs to vi
 4. Ensure default_settings.txt is in same directory as source code
 5. Enter or modify data in productivity/goal data files
 6. Run main.py to launch GUI
-## Usage
 
+## Usage
+1. Validate default_settings.txt contents and storage location
+   * contains updated path values
+   * starting_week contains a date value stored as a string with no quotation marks separated by '-'
+   * contains a naming pattern
+3. Handle data entry and formatting
+
+   * goal and productivity data is entered with the following schema: Date, Subject, Type, Activity, Start, End
+      * Date
+         * Type: datetime
+         * Description: Date has to be in the following format within the csv/xlsx file: YYYY-MM-DD
+         * Required: Yes
+      * Subject
+         * Type: str
+         * Description: The general category that the task belongs to - helpful for organizing data
+         * Required: No
+      * Type
+         * Type: str
+         * Description:
+      * note: empty or improperly formatted entries in the required data fields will raise a runtime error
+   * goal data has at least one entry for each corresponding day that exists in the productivity data selection
 ## Features
  * GUI
    * Select paths for files containing goal data and productivity data
