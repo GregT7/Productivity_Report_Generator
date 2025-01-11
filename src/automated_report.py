@@ -126,7 +126,7 @@ def generate_report(start_date, end_date, week_no, save_loc, prod_path, goal_pat
         pdf.cell(0, 0, desc2, ln=True, align="L")
 
 
-        title_dict = {'title': 'Performance Sums Bar Chart', 'x':16, 'y':24, 'size':12}
+        title_dict = {'title': 'Performance Totals Bar Chart', 'x':16, 'y':24, 'size':12}
         graph_dict = {'x': 20, 'y': 28, 'w':180, 'h':height,
                       'fig': graphs['totals_graph'][0],
                       'ax':graphs['totals_graph'][1]

@@ -115,7 +115,7 @@ def plot_prod_fig(fig, ax, df):
     setup_productivity_figure(df, ax, "YlGnBu")
 
     # Customize the plot
-    ax.set_title('Productivity Time Spread')
+    ax.set_title('Productivity Time Spread Heatmap')
     ax.set_xlabel('Day of the Week')
     ax.set_ylabel('Hour of the Day')
     plt.setp(ax.get_xticklabels(), rotation=0)
@@ -269,7 +269,7 @@ def plot_performance_heatmap(fig, ax, performance_heatmap):
     # Add the custom legend
     ax.legend(handles=legend_labels, title="Legend", bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.5)
 
-    ax.set_title('Performance Time Spread')
+    ax.set_title('Productivitiy/Goal Differential Heatmap')
     ax.set_xlabel('Day of the Week')
     ax.set_ylabel('Hour of the Day')
     plt.setp(ax.get_xticklabels(), rotation=0)
@@ -317,7 +317,7 @@ def plot_sum_data(fig, ax, sum_data):
         ax.text(bar.get_x() + bar.get_width() / 2, height + 0.1, str(round(height, 2)), 
                 ha='center', va='bottom', fontsize=10)
 
-    ax.set_title('Weekly Productivity vs Planned Time')
+    ax.set_title('Performance Totals Bar Chart')
     ax.set_xlabel('Day of Week')
     ax.set_ylabel('Time (mins)')
     ax.set_xticklabels(sum_data.index, rotation=0)
@@ -367,3 +367,8 @@ def prepare_graphs(prod_path, goal_path, start_date, end_date):
     plot_sum_data(figs['totals_figure'], ax3, sum_data)
 
     return graphs
+
+prod_path = '/Users/Grego/Desktop/Winter_2024/winter2024_TimeData.xlsx'
+goal_path = '/Users/Grego/Desktop/Winter_2024/goal_data.xlsx'
+prepare_graphs(prod_path, goal_path, '2024-12-30', '2025-01-05')
+plt.show()
