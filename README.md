@@ -1,6 +1,7 @@
 # Productivity_Report_Generator
 
 ## Description
+A python program that analyzes productivity and goal data, produces graphs to visualize data, and outputs results to a formatted pdf file through a GUI.
 
 ## Table of Contents
 
