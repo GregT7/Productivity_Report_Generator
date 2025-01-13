@@ -1,5 +1,5 @@
-starting_week = 2024-12-30
-prod_path = /Users/Grego/Desktop/Winter_2024/winter2024_TimeData.xlsx
-goal_path = /Users/Grego/Desktop/Winter_2024/goal_data.xlsx
+starting_week = 2024-12-16
+prod_path = /Users/Grego/Desktop/SELF/School/7_Winter_2024/winter2024_TimeData.xlsx
+goal_path = /Users/Grego/Desktop/SELF/School/7_Winter_2024/goal_data.xlsx
 save_path = /Users/Grego/Desktop
 naming_pattern = prod_report_spr2025_wX.pdf

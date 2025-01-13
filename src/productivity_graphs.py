@@ -367,8 +367,3 @@ def prepare_graphs(prod_path, goal_path, start_date, end_date):
     plot_sum_data(figs['totals_figure'], ax3, sum_data)
 
     return graphs
-
-prod_path = '/Users/Grego/Desktop/Winter_2024/winter2024_TimeData.xlsx'
-goal_path = '/Users/Grego/Desktop/Winter_2024/goal_data.xlsx'
-prepare_graphs(prod_path, goal_path, '2024-12-30', '2025-01-05')
-plt.show()
