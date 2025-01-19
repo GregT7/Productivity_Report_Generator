@@ -221,7 +221,7 @@ def handle_report_gen(cbutton, sdate, edate, wno, sloc, ppath, gpath, npattern):
 #         fcol - int
 # Returns: CustomButton
 # Side Effects: modifies main application window, creates and saves pdf file
-def setup_report_button(root, settings, date_sel, paths, frow, fcol):
+def setup_report_button(root, settings, date_sel, buttons, frow, fcol):
     report_title = ctk.CTkLabel(root, text="Generate Report", font=("Verdana", 18))
     report_title.grid(row=frow, column=fcol, pady=(10,0), columnspan=2)
 
@@ -235,9 +235,9 @@ def setup_report_button(root, settings, date_sel, paths, frow, fcol):
         date_sel.start_ds.get_date(),
         date_sel.end_ds.get_date(),
         calc_week_num(settings['starting_week'], date_sel.start_ds.get_date()),
-        paths['save_path'],
-        paths['prod_path'],
-        paths['goal_path'],
+        buttons['save_button'].fpath,
+        buttons['prod_button'].fpath,
+        buttons['goal_button'].fpath,
         settings['naming_pattern'])
     )
     return report_button
@@ -264,7 +264,7 @@ def launch_gui(settings):
     save_str = f"Selected location: {format_file_text(settings['save_path'])}"
     sselButton = create_CustomButton(root, settings['save_path'], title_text, save_str, "Select location", "save", 9, 0)
 
-    paths = {'prod_path': pselButton.fpath, 'goal_path': gselButton.fpath, "save_path": sselButton.fpath}
-    report_button = setup_report_button(root, settings, date_sel, paths, 12, 0)
+    buttons = {'goal_button': gselButton, 'save_button': sselButton, 'prod_button': pselButton}
+    report_button = setup_report_button(root, settings, date_sel, buttons, 12, 0)
 
     root.mainloop()
